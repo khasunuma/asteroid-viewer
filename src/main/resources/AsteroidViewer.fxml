@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.AmbientLight?>
+<?import javafx.scene.PointLight?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.PhongMaterial?>
+<?import javafx.scene.shape.Sphere?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.SubScene?>
+<?import javafx.scene.PerspectiveCamera?>
+<?import javafx.scene.transform.Transform?>
+<?import javafx.scene.transform.Translate?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.ParallelCamera?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.92" xmlns:fx="http://javafx.com/fxml/1" fx:controller="jp.yumix.asteroid.AsteroidViewerController">
+   <children>
+      <SubScene fx:id="subScene" height="370.0" width="600.0" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <fill>
+            <Color fx:value="BLACK"/>
+         </fill>
+         <root>
+            <Group>
+               <Sphere fx:id="sphere" radius="100" scaleZ="0.5">
+                  <material>
+                     <PhongMaterial fx:id="material" specularColor="BLACK" diffuseColor="BLACK"/>
+                  </material>
+               </Sphere>
+               <PointLight fx:id="pointLight" color="WHITE" translateX="240.0" translateY="0.0" translateZ="-250.0" />
+               <AmbientLight fx:id="ambientLight" color="rgba(80, 80, 80, 0.5)" />
+            </Group>
+         </root>
+         <camera>
+            <ParallelCamera fx:id="camera" layoutX="-300.0" layoutY="-185.0" />
+         </camera>
+      </SubScene>
+      <ComboBox fx:id="comboBox" onAction="#onAction" promptText="(asteriod)" prefHeight="30.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" />
+      <Label fx:id="label" alignment="CENTER" style="-fx-font-size:14pt" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="0.0" />
+   </children>
+</AnchorPane>
