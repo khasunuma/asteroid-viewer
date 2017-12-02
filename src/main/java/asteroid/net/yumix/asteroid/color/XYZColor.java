@@ -1,4 +1,4 @@
-package net.yumix.asteroid.color;
+package asteroid.net.yumix.asteroid.color;
 
 import java.util.stream.DoubleStream;
 

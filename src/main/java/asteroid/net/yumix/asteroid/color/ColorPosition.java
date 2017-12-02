@@ -1,4 +1,4 @@
-package net.yumix.asteroid.color;
+package asteroid.net.yumix.asteroid.color;
 
 import static java.lang.Math.pow;
 

@@ -1,9 +1,12 @@
-package net.yumix.asteroid;
+package asteroid.net.yumix.asteroid;
 
 import java.net.URL;
 import java.util.Arrays;
 import java.util.ResourceBundle;
 
+import asteroid.net.yumix.asteroid.color.ColorPosition;
+import asteroid.net.yumix.asteroid.color.ColorTemperature;
+import asteroid.net.yumix.asteroid.color.XYZColor;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -18,9 +21,6 @@ import javafx.scene.control.Label;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.PhongMaterial;
 import javafx.scene.shape.Sphere;
-import net.yumix.asteroid.color.ColorPosition;
-import net.yumix.asteroid.color.ColorTemperature;
-import net.yumix.asteroid.color.XYZColor;
 
 public class AsteroidViewerController implements Initializable {
 
