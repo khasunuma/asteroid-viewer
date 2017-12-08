@@ -1,4 +1,4 @@
-package asteroid.net.yumix.asteroid;
+package net.yumix.asteroid;
 
 public enum Asteroid {
 

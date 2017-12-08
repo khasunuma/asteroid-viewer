@@ -1,4 +1,4 @@
-package asteroid.net.yumix.asteroid;
+package net.yumix.asteroid;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
